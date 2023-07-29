@@ -34,3 +34,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: "./.github/actions/aws-auth"
+      - name: Unit test
+        run: ./auto/test
+
